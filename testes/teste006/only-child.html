@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:only-child Exemplo</title>
+    <style>
+        .parent-only p:only-child {
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* O parágrafo abaixo não será estilizado porque ele não é o único filho de 'parent-multiple' */
+.parent-multiple span:only-child {
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <div class="parent-only">
+        <p>Este é o único filho (será estilizado).</p>
+    </div>
+    <div class="parent-multiple">
+        <span>Primeiro filho.</span>
+        <span>Segundo filho.</span>
+    </div>
+    <div class="parent-empty">
+        </div>
+</body>
+</html>

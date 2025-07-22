@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:empty Exemplo</title>
+    <style>
+        /* Estiliza divs que estão completamente vazias */
+.box-empty:empty {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    background-color: lightpink;
+    margin-bottom: 10px;
+}
+
+/* Estiliza spans que estão completamente vazios */
+.empty-span:empty {
+    display: inline-block; /* Para que width e height funcionem */
+    width: 50px;
+    height: 20px;
+    background-color: lightgreen;
+    border: 1px dashed green;
+}
+    </style>
+</head>
+<body>
+    <div class="box-empty"></div>
+    
+    <span class="empty-span"></span>
+</body>
+</html>

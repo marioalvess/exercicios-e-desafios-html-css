@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #D9AC84, #BF9075);
+}
+
+main {
+
+    background-color: white; /* Define a cor de fundo do conteúdo. Nesse caso é a cor de fundo do elemento main. */
+
+    border-radius: 10px; /* Serve para deixar as bordas do conteúdo arredondas. */
+
+    box-shadow: 5px 5px 20px #724225; 
+    /* Serve para criar uma sobra na margem do conteúdo. 
+    Parâmetros:
+    1. O quanto a sombra vai andar para os lados.  
+    2. O quanto a sombra vai andar para baixo ou para cima.
+    3. O quanto a sombra vai espalhar.
+    4. A cor da sombra.
+    */
+
+
+    width: 600px; /* Define a largura do conteúdo */
+
+    padding: 10px; /* Refere-se a borda interna do conteúdo */
+
+    margin: auto; /* Refere-se a margem externa do elemento. 
+    auto; significa que a margem de praticamente todos os lados ficarão uniformes */
+}
+
+h1{
+    color: #40302B ;
+    text-align: center; /* Centralizar o título */
+    text-shadow: 1px 1px 3px #44322d; /* Criar sombra no título*/
+}
+
+h2 {
+    color: #73625C;
+}
+
+p{
+    color: #0D0000;
+    text-align: justify;
+}

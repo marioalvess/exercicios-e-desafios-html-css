@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover com Elemento Irmão e nth-child</title>
+    <style>
+        .container {
+            margin: 50px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            display: flex; /* Para centralizar ou organizar os elementos */
+            flex-direction: column; /* Organiza em coluna */
+            align-items: flex-start; /* Alinha os itens ao início */
+        }
+
+        .container a {
+            font-size: 1.2em;
+            color: blue;
+            text-decoration: none;
+            margin-bottom: 10px; /* Espaço abaixo do link */
+        }
+
+        .container p {
+            display: none; /* O parágrafo fica escondido por padrão */
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #eee;
+        }
+
+        /* Usamos :nth-child para selecionar o link se houver mais de um,
+           e o seletor de irmão geral (~) para afetar o parágrafo. */
+        .container a:nth-child(1):hover ~ p {
+            display: block; /* O parágrafo aparece quando o mouse está sobre o link */
+        }
+
+        /* Se você tiver múltiplos links e parágrafos, você pode fazer algo assim: */
+        /* .container a:nth-child(2):hover ~ p:nth-child(3) {
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="#">Passe o mouse aqui para ver o parágrafo 1</a>
+        <p>Este é o primeiro parágrafo que aparece com o hover do primeiro link!</p>
+    </div>
+
+</body>
+</html>

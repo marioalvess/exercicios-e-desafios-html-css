@@ -1,0 +1,75 @@
+
+<!-- 
+ 
+BEM (Block, Element, Modifier)
+
+BEM é uma metodologia que divide a interface do usuário em blocos independentes, elementos que compõem esses blocos e modificadores que alteram o estado ou aparência.
+
+Bloco: Entidade independente e reutilizável (ex: header, menu, button, card).
+
+Exemplo: .card
+
+Elemento: Parte de um bloco que não tem significado por si só fora do bloco (ex: __title, __image, __text).
+
+Exemplo: .card__title
+
+Modificador: Sinaliza uma variação de um bloco ou elemento (ex: --large, --disabled, --primary).
+
+Exemplo: .button--primary, .card--featured
+
+-->
+
+
+<div class="card">
+    <img class="card__image" src="image.jpg" alt="Description">
+    <h2 class="card__title">Título do Cartão</h2>
+    <p class="card__text">Este é um parágrafo do cartão.</p>
+    <button class="card__button card__button--primary">Saiba Mais</button>
+</div>
+
+<!--
+Outro exemplo de BEM:
+
+Um Componente de Alerta/Mensagem
+Imagine que você quer criar um componente de alerta que pode ter diferentes níveis de severidade (sucesso, erro, aviso).
+
+Bloco: alert (O componente de alerta em si, que pode ser reutilizado em qualquer lugar).
+
+Elementos: alert__icon, alert__message, alert__close (Partes específicas do alerta que não teriam sentido sozinhas).
+
+Modificadores: alert--success, alert--error, alert--warning (Variações do bloco alert que mudam sua aparência ou estado).
+-->
+
+
+<div class="alert alert--success">
+    <span class="alert__icon">✅</span>
+    <p class="alert__message">Sua operação foi concluída com sucesso!</p>
+    <button class="alert__close">X</button>
+</div>
+
+<div class="alert alert--error">
+    <span class="alert__icon">❌</span>
+    <p class="alert__message">Ocorreu um erro ao processar sua solicitação.</p>
+    <button class="alert__close">X</button>
+</div>
+
+<div class="alert alert--warning">
+    <span class="alert__icon">⚠️</span>
+    <p class="alert__message">Atenção: Seu cadastro está incompleto.</p>
+    <button class="alert__close">X</button>
+</div>
+
+
+<!-- 
+No conteúdo principal, colocar contexto geral, como se fosse o título, depois colocar o subtitulo, com mais especificidade, e depois a unidade, ou item final.  
+-->
+
+<div class="product-card">
+    <img src="tenis.jpg" alt="Tênis Esportivo" class="product-card-image">
+    <div class="product-card-info">
+        <h3 class="product-card-title">Tênis Performance X</h3>
+        <p class="product-card-description">Leveza e conforto para suas corridas.</p>
+        <span class="product-card-price">R$ 299,90</span>
+        <button class="add-to-cart-button">Adicionar</button>
+    </div>
+</div>

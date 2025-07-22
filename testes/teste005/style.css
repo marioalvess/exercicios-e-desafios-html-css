@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::selection{
+    color: black;
+    background-color: darkgreen;
+}
+
+h1 {
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: green;
+    
+}
+
+.link:hover {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+
+h2::before {
+    content: '»';
+    font-weight: lighter;
+   }
+
+h2::after {
+    content: '«';
+    font-weight: lighter;
+}
+
+
+a,.mensagem-padrao {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.mensagem-instrucao {
+    display: none;
+    margin-top: 0;
+    background-color: green;
+    width: 100px;
+    padding: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+.interacao:hover+.mensagem-instrucao {display: block;} 
+
+
+
+

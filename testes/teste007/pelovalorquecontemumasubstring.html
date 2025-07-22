@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Substring em Atributo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* CSS para o seletor de substring em atributo */
+        [title*="info"] {
+            background-color: lightcoral;
+            color: white;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletor de Substring em Atributo (`[atributo*="valor"]`)</h1>
+
+    <p title="Informações adicionais sobre este texto.">Este parágrafo tem "informações" no título.</p>
+    <div title="Clique para mais detalhes e info.">Esta div tem "info" no título.</div>
+    <span title="Dica importante.">Este span tem "importante" mas não "info".</span>
+    <button title="Botão de informação rápida.">Este botão tem "informação" no título.</button>
+</body>
+</html>

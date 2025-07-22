@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><!--Cabeça-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags(Tags de agrupamento)</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 4px;
+        }
+        nav {
+            background-color: darkgray;
+            padding: 6px;
+            box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.356);
+        }
+
+        nav > a { 
+            text-decoration: none;
+            margin-right: 40px;
+            padding: 2px;
+        }
+        main { 
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 4px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+
+        article > aside {
+            background-color: gray;
+            padding: 5px;
+        }
+
+        a {color: darkblue;}
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {margin: 0px;}
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+         <h1>Meu site</h1>
+         <nav> <!--Menu de navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a> 
+         </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section class="Assunto"> <!--Seção genérica tematicamente relacionada-->
+            <h2>Curso de JavaScript</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet nulla perspiciatis dolores! Repellat veniam explicabo aut illum laborum incidunt? Dolor molestias libero similique sequi reiciendis at ratione mollitia officia!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nam nulla a, minima consequuntur tempora, doloremque ut impedit necessitatibus doloribus deleniti perspiciatis porro saepe enim ullam quam quaerat. Atque, veritatis!</p>
+        </section>
+        <section class="noticias"> <!--Seção genérica tematicamente relacionada-->
+            <article> <!--Conteúdo independente e auto-contido-->
+                <h2>Notícias sobre JavaScript</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore veniam officia sint. Saepe, at impedit! Maiores facilis fugiat dicta delectus molestiae enim quis dolorem, placeat rem totam saepe ipsa nemo?</p>
+                <aside> <!--Conteúdos extras relacionados ao assunto-->
+                    <p><a href="#">Artigo sobre front-end escrito por José da Silva</a></p>
+                    <p><a href="#">Veja como os cursos estão mudando a vida das pessoas</a></p>
+                    <p>Entre em contato por guanabara@gmail.com</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido pelo CursoemVídeo</p> 
+    </footer>
+</body>
+</html>
+
+
+<!--
+    As tags padrões de agrupamento genéricas são duas, <div> e <span>. Antigamente nas versões antigas do HTML, se usava <div> dentro de <div> para criar todo o conteúdo de uma página.
+    Hoje existem tags semânticas para elaborar o conteúdo de um site, <header>, <main>, e <footer> também são divs, mas o navegador valoriza mais quando você usa essas tags que tem um significado.
+-->
+
+<!--
+Não tem problema nenhum você usar a tag <article> dentro de <section>, ou <section> dentro de <article>, são tags de agrupamentos, são como <divs> e podem ser usadas da maneira em que você achar melhor.
+-->
+
+
+<!--
+As três tags principais dentro do corpo de um site são:
+<header>, <main> e <footer>
+-->
+
+<!--
+Depois vem as tags de agrupamento com semântica:
+<section>, <article>, <nav>, e <aside>.
+-->
+
+<!--
+Depois vem as tags de agrupamento sem semântica:
+<div> e <span>
+-->
+
+<!--
+Não tenha um olhar para as tags apenas como conteúdo, pense nelas como blocos agrupadores de estilização do seu site.
+-->
+
+<!--Passar tudo isso para o Docs.-->

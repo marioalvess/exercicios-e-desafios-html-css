@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-F">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:last-of-type Exemplo</title>
+    <style>
+        /* Seleciona o último parágrafo dentro de .container-elements */
+.container-elements p:last-of-type {
+    color: brown;
+    font-style: italic;
+}
+
+/* Seleciona o último span dentro de .container-elements */
+.container-elements span:last-of-type {
+    border: 1px dashed blue;
+    padding: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-elements">
+        <p>Parágrafo 1</p>
+        <span>Span 1</span>
+        <p>Parágrafo 2 (será estilizado, último 'p')</p>
+        <span>Span 2 (será estilizado, último 'span')</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: #84E1AD;
+}
+
+* {
+   margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+.header {
+    background-image: linear-gradient(to bottom, #3DDC84, #1A5D38 85%);
+    color: white;
+}
+
+.title-principal {
+    text-align: center;
+    font-size: 2em;  
+    padding: 20px;
+    padding-top: 30px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: 500;
+}
+
+.paragraph-header {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.829);
+    padding-bottom: 15px;
+    padding-top: 0;
+    word-spacing: 1px;
+}
+
+.menu {
+    padding: 3px;
+}
+
+.item-menu {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.9em;
+     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+}
+
+.section {
+    background-color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 850px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.514);
+    box-shadow: -1px -1px 7px rgba(0, 0, 0, 0.514);
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+.paragraph-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-indent: 25px;
+    word-spacing: 4px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.article {
+    text-align: center;
+}
+
+.title-article {
+    font-family: 'Idroid', Helvetica, sans-serif;
+    color: #1A5D38;
+    text-align: left;
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.subtitle-article {
+    font-family: 'Idroid', Helvetica, sans-serif;
+    color: #1A5D38;
+    background-image: linear-gradient(to right, #84E1AD, white);
+    text-align: left;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+.paragraph-article {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-indent: 25px;
+    word-spacing: 6px;
+    text-align: justify;
+    padding-left: 20px; 
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.video {
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+.aside {
+    background-color: #C5EBD6;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.title-aside {
+    background-color: #2FA866;
+    color: white;
+    padding: 7px;
+    text-indent: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.paragraph-aside {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 25px;
+    padding: 15px 10px 15px 10px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+.list {
+    column-count: 2;
+    list-style-type: '✔  ';
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #1A5C38;
+    color: rgba(255, 255, 255, 0.822);
+    text-align: center;
+}
+
+.strong {
+    color: white;
+}
+
+.paragraph-footer{
+    word-spacing: 2px;
+    padding: 6px;
+    font-size: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.destaque {
+    color: green;
+}
+
+.link {
+    color: green;
+    text-decoration: none;
+}

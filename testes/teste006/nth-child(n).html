@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:nth-child(n) Exemplo</title>
+    <style>
+        /* Seleciona o terceiro item da lista */
+.lista-itens li:nth-child(3) {
+    color: green;
+    font-weight: bold;
+}
+
+/* Seleciona todos os itens pares da lista */
+.lista-itens li:nth-child(even) {
+    background-color: lightgray;
+}
+/*Use even ou odd para selecionar elementos filhos com base em sua posição par(even) ou ímpar(odd) dentro de um elemento pai*/
+
+
+/* Seleciona o segundo filho de 'mix-elements'*/
+
+/* Coloque a classe, coloque :nth-child(), e escolha o número do filho. Coloque a proprieade e o valor.*/
+
+/* Você também poderia colocar o elemento antes de :nth-child() que ficaria assim, span:nth-child(2), mas nesse exemplo abaixo ficaria redundante, pois já está claro que span é o segundo filho.*/
+
+.mix-elements :nth-child(2) {
+    border: 2px dashed orange;
+}
+
+    </style>
+</head>
+<body>
+    <ul class="lista-itens">
+        <li>Item 1</li>
+        <li>Item 2 (pares)</li>
+        <li>Item 3</li>
+        <li>Item 4 (pares)</li>
+        <li>Item 5</li>
+        <li>Item 6 (pares)</li>
+    </ul>
+    <div class="mix-elements">
+        <p>Primeiro parágrafo. (1º filho)</p>
+        <span>Primeiro span (2º filho).</span>
+        <p>Segundo parágrafo (3º filho).</p>
+        <span>Segundo span (4º filho).</span>
+    </div>
+</body>
+</html>

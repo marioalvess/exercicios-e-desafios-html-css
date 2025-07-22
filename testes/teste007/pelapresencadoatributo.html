@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Presença de Atributo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* CSS para o seletor de presença de atributo */
+        [data-info] {
+            border: 2px solid blue;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletor de Presença de Atributo (`[atributo]`)</h1>
+
+    <p data-info="informacao-importante">Este parágrafo possui o atributo `data-info`.</p>
+    <div data-info="dados-adicionais">Esta div também possui o atributo `data-info`.</div>
+    <span>Este span não possui o atributo `data-info`.</span>
+    <button data-info>Este botão possui o atributo `data-info` (sem valor específico).</button>
+</body>
+</html>

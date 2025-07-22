@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-F">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:nth-of-type(n) Exemplo</title>
+    <style>
+       /* Seleciona o segundo parágrafo dentro de 'conteudo-misto' */
+.conteudo-misto p:nth-of-type(2) {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* Seleciona o primeiro span dentro de 'conteudo-misto' */
+.conteudo-misto span:nth-of-type(1) {
+    background-color: lightblue;
+    padding: 3px;
+} 
+    </style>
+</head>
+<body>
+    <div class="conteudo-misto">
+        <p>Parágrafo 1</p>
+        <span>Span 1</span>
+        <p>Parágrafo 2 (será estilizado)</p>
+        <div>Div 1</div>
+        <p>Parágrafo 3</p>
+        <span>Span 2</span>
+    </div>
+</body>
+</html>

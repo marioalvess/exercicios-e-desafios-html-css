@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Palavra Inteira no Atributo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* CSS para o seletor de palavra inteira no atributo */
+        [class~="destaque"] {
+            font-weight: bold;
+            color: purple;
+            background-color: #f0e6fa;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px dashed purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletor de Palavra Inteira no Atributo (`[atributo~="valor"]`)</h1>
+
+    <p class="texto comum">Este é um parágrafo de texto comum.</p>
+    <p class="item destaque">Este parágrafo possui a classe "destaque".</p>
+    <div class="card destaque principal">Esta div também possui a classe "destaque" e "principal".</div>
+    <span class="outro-destaque">Este span não será selecionado, pois "outro-destaque" não é a palavra exata "destaque".</span>
+</body>
+</html>
